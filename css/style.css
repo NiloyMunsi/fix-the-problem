@@ -60,6 +60,17 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+.fas{
+  color: goldenrod;
+}
+.buy-btn{
+  color:#ffffff;
+  background-color:#1289A7 ;
+}
+.details-btn{
+  color:#ffffff;
+  background-color:#1e3799;
+}
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;

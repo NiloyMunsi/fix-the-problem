@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>Dream Fashion</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,21 +18,30 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+  
+  </header>
   <main class="main">
     <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+      <section class="container my-2">
+        <!-- Input Box -->
+        <div class="d-flex flex-row col-md-9 col-lg-7 col-sm-7">
+          <input id="input-field"
+            type="text"
+            class="form-control me-2 search-field"
+            placeholder="Enter a product name..."
+          />
+        </div>
+          <div>
+          <button class="btn buy-btn" id="search-btn"  onclick="loadProducts()">Search</button>
+        </div>
+      
+      </section>
     </div>
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <h1></h1>
+          
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -80,7 +89,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn buy-btn text-center">Buy Now</button>
           </div>
         </div>
       </div>
@@ -90,6 +99,7 @@
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
+  <script src="https://kit.fontawesome.com/bd3b8d2d3a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
